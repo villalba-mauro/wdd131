@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Glory:wght@100..800&family=Roboto+Slab&display=swap');
+
+:root {
+    --heading-color: #000000;
+    --paragraph-color: #140303;
+    --link-color: #007bff; 
+    --heading-font:'Roboto Slab';
+    --paragraph-font:'Glory';
+}
+
+header {
+    background: cornsilk;
+	display: flex;
+    align-items: center;
+    justify-content: center;
+	padding: 20px;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+}
+h1 {
+	font-size: 2rem;
+    font-family: var(--heading-font);
+}
+
+nav {
+	background-color: #a4d1ef;
+	margin: 0 auto;
+	max-width: 100%;
+}
+
+nav ul {
+	list-style-type: none;
+    
+}
+
+nav a {
+    display: block;
+	font-family: var(--heading-font);
+	color: #000000;
+	font-size: 1.3rem;
+	padding: 1rem;
+	text-decoration: none;
+    text-align: center;
+}
+@media (min-width: 640px) {
+	nav ul {
+		display: flex;
+	}
+	nav ul li {
+		flex: 1 1 100%;
+	}
+}
+a:hover{
+    background-color: rgb(255, 214, 120);
+}
+ main{
+    max-width: 960px;
+   margin:  0 auto;
+ }
+section {
+    background: linear-gradient(to bottom, #9ec4f5c4, #a06fef); /* Fondo degradado de arriba hacia abajo */
+}
+
+.contenedor{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 5px;
+    background-color:  #ffffff;;
+}
+.card{
+    padding: 20px;
+    display: block;
+}
+
+.n1 p{
+    text-align:justify;   
+    font-family: var(--paragraph-font);
+    font-size: 1.5rem;
+ }
+.n1 img{
+    max-width: 45%;
+    box-shadow: 0 0 30px  rgb(255, 255, 255);
+    grid-column: 1;
+    float:right; 
+    margin-left: 15px;
+}
+
+.n2 p{
+    text-align: justify;
+    font-family: var(--paragraph-font);
+    font-size: 1.5rem;
+}
+.n2,.n1 h2{
+    font-family: var(--heading-font);
+}
+.n2 img{
+    max-width: 45%;
+    box-shadow: 0 0 30px rgb(255, 255, 255);
+    grid-column: 1;
+    float:left; 
+    margin-right: 15px;
+}
+
+.n2{
+   grid-row: 2;
+
+}
+
+.n3{
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+    border: 1px solid black;
+    margin-top: auto;
+    font-family: var(--heading-font);
+}
+.n3 h2{
+    font-size: 2.5rem;
+    text-align: center;
+}
+.n3 ul{
+    list-style: none;
+    
+    
+   
+   
+}
+.n3 a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: #161086;
+    
+}
+.n3 img{
+    max-width: 65%;
+    box-shadow: 0 0 30px  rgb(255, 255, 255);
+   
+}
