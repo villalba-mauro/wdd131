@@ -1,21 +1,19 @@
-// Obtener el elemento <span> para el año actual
-var currentYearElement = document.getElementById("currentyear");
+// Function to get the current year and populate it in the footer
+function getCurrentYear() {
+    const currentYearElement = document.getElementById('currentyear');
+    const currentYear = new Date().getFullYear();
+    currentYearElement.textContent = currentYear;
+}
 
-// Obtener el año actual
-var currentYear = new Date().getFullYear();
+// Function to get the date of last modification and populate it in the footer
+function getLastModifiedDate() {
+    const lastModifiedElement = document.getElementById('lastModified');
+    const lastModifiedDate = document.lastModified;
+    lastModifiedElement.textContent = `Last Modified: ${lastModifiedDate}`;
+}
 
-// Actualizar el contenido del <span> con el año actual
-currentYearElement.textContent = "© " + currentYear;
+// Call the function to get and display the current year when the page loads
+getCurrentYear();
 
-// Obtener el elemento <p> para la fecha de última modificación
-var lastModifiedElement = document.getElementById("lastModified");
-
-// Obtener la fecha de última modificación del documento
-var lastModifiedDate = new Date(document.lastModified);
-
-// Formatear la fecha de última modificación
-var options = { year: 'numeric', month: 'long', day: 'numeric' };
-var formattedDate = lastModifiedDate.toLocaleDateString(undefined, options);
-
-// Actualizar el contenido de <p> con la fecha de última modificación
-lastModifiedElement.textContent = "Last modified: " + formattedDate;
+// Call the function to get and display the date of last modification when the page loads
+getLastModifiedDate();
