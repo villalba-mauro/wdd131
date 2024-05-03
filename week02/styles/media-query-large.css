@@ -1,12 +1,13 @@
 
 @media screen and (min-width: 500px) {
-    header{
-        padding: 1rem;
-        margin: 5px;
-        color: white;
-        background-color: black;
-        
+       
+        .litle-screen:first-child{
+            background: black;
+            color: white;
+            
+            
         }
+        
 
     main{
         display: grid;

@@ -14,12 +14,14 @@ body{
 main{
     display: grid;
     grid-template-columns: 1fr;
-    gap: 1rem;
+    gap: 10px;
 }
+
 
 section{
     padding: 1rem;
     background-color: #fff;
+   
 }
 
 
