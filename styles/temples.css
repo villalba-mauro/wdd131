@@ -30,7 +30,8 @@ h2 {
 
 
 header {
-	background-color: #bbb;
+	background-color: #71aaff;
+    background: linear-gradient(to left, #6aaaff, #843cf8);
 	display: grid;
 	grid-gap: 1rem;
 	padding: 20px;
@@ -102,7 +103,7 @@ figure{
     padding: 1rem;
 }
 figure img{
-    width: 75vw;
+    width: 100%;
     height:100%;
     padding: .5rem;
     margin: 5px;
