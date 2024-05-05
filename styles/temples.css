@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Glory:wght@100..800&family=Roboto+Slab&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+h1 {
+    
+	text-align: left;
+	font-family: times, serif;
+	font-size: 1.5rem;
+	margin-left: 1rem;
+    margin-top: 1rem;
+    font-family:'Roboto Slab' ;
+}
+
+h2 {
+	font-size: 1.2rem;
+	color: navy;
+	text-align: left;
+	margin: 1rem;
+}
+
+
+
+/* small view navigation */
+
+
+header {
+	background-color: #bbb;
+	display: grid;
+	grid-gap: 1rem;
+	padding: 20px;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	box-shadow: 0 0 30px #333;
+}
+
+header,main {
+	margin: 0 auto;
+}
+
+/*#menu {
+	font-size: 1.5rem;
+	border: 0;
+	background: none;
+	color: #000;
+	position: absolute;
+	top: 1rem;
+	right: 1rem;
+}
+
+#menu::before {
+	content: "☰";
+    margin-right: 1rem;
+    
+}
+
+#menu.open::before {
+	content: "❌";
+}*/
+
+.navigation {
+	display: flex;
+	flex-direction: column;
+	list-style: none;
+    background: linear-gradient(to bottom, #6ea9f7c4, #6a25d8);
+	
+}
+
+.navigation a {
+	display: block;
+	padding: 1rem;
+	text-align: center;
+	text-decoration: none;
+	color: #fff;
+    font-family:'Roboto Slab', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+.navigation a:hover {
+	background-color: #e9c73f;
+	color: #030101;
+	font-weight: 700;
+}
+
+/* when the button is clicked - the open class is toggled (added/removed) */
+
+section{
+    background:linear-gradient(to bottom, #b7d3f8c4, #bb94fadc);
+}
+
+figure{
+    display: grid;
+    place-content: center;
+    padding: 1rem;
+}
+figure img{
+    width: 75vw;
+    height:100%;
+    padding: .5rem;
+    margin: 5px;
+}
+figure figcaption{
+    text-align: center;
+    font-family: 'Glory' ;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+
+
+
+/* large view navigation ************************************/
+

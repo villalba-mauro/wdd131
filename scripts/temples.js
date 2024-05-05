@@ -1,3 +1,12 @@
+const hamButton = document.querySelector('#menu');
+const navigation = document.querySelector('.navigation');
+
+hamButton.addEventListener('click', () => {
+	navigation.classList.toggle('open');
+	hamButton.classList.toggle('open');
+});
+
+// Function to get the current year and populate it in the footer
 function getCurrentYear() {
     const currentYearElement = document.getElementById('currentyear');
     const currentYear = new Date().getFullYear();
