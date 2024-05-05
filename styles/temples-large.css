@@ -9,11 +9,14 @@
 	h2 {
 		font-size: 2rem;
 		text-align: center;
+        font-family: 'Roboto Slab';
+        color: rgb(23, 23, 99);
 	}
 
-	/*#menu {
-		display: none; /* hide hamburger button 
-	}*/
+	#menu {
+		display: none; /* hide hamburger button*/
+	}
+
     header{
         display: flex;
         align-items: center;
@@ -27,15 +30,18 @@
 	}
 
 	.navigation a {
+        display: block;
 		flex: 1 1 100%;
 	}
 
 	.album {
-        /*min-width: 960px;*/
+        
         display: flex;
         justify-content: center;
         align-items: center;
     }
+
+    
     
     /*.album img{
         width: 60%;
@@ -43,6 +49,7 @@
         object-fit:cover;
         padding: .5rem;
     }*/
+
    main{
     max-width: 960px;
     margin: 0 auto;
