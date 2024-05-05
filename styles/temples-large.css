@@ -36,7 +36,6 @@
 
 	.album {
         display: flex;
-        flex: wrap;
         justify-content: center;
         align-items: center;
     }
