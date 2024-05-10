@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/place.css">
+    
+</head>
+<header>
+    <h1>Buenos Aires</h1>
+</header>
+<body>
+    <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/buenos-aires.jpg" media="(min-width: 960px)">
+                <source srcset="images/buenos-aires-medium.webp" media="(min-width: 500px)">
+                <img src="images/buenos-aires-hero.webp" alt="Buenos aires city" width="500" height="250">
+            </picture>
+        </div>
+        <section>
+            <h2>Data</h2>
+        </section>
+
+        <section class="st">
+            <h2>Wheater</h2>
+            <div id="sensacion-termica">
+                <p>Wind Chill</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>
+            <span id="currentyear"></span>
+            ©️ Mauro Villalba - Rosario Argentina<br>
+         </p>
+         <p id="lastModified"></p> <!-- Corrección del cierre de la etiqueta -->
+     </footer>
+<script src="scripts/place.js" defer></script>
+</body>
+</html>

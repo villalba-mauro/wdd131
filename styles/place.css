@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Glory:wght@100..800&family=Roboto+Slab&display=swap');
+
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.hero img{
+    width: 100%;
+    height: auto;
+}
+
+h1 {
+    
+	text-align: left;
+	font-family: times, serif;
+	font-size: 2.5rem;
+	margin-left: 1rem;
+    margin-top: 1rem;
+    font-family:'Roboto Slab' ;
+}
+
+header {
+	background-color: #71aaff;
+    background: linear-gradient(to left, #6aaaff, #843cf8);
+	display: grid;
+	grid-gap: 1rem;
+	padding: 20px;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	box-shadow: 0 0 30px #333;
+}
+
+footer{
+    background-color: rgb(222, 215, 250);
+    padding:1rem;
+    text-align: center;
+    font-family: 'Glory';
+}
+
+section{
+    padding: 1rem;
+    margin: .5rem;
+    text-align: center;
+    background-color: #a4ccff;
+    font-family: 'Roboto Slab' ;
+}
+.st h2:after{
+    content: "🌤️";
+}
