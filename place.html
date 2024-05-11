@@ -1,9 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="Find the weather of your city" >  
+    <meta name="author" content="Mauro Villalba" >
+    <title>Wheater</title>
     <link rel="stylesheet" href="styles/place.css">
     
 </head>
@@ -14,29 +16,79 @@
     <main>
         <div class="hero">
             <picture>
-                <source srcset="images/buenos-aires.jpg" media="(min-width: 960px)">
+                <source srcset="images/large.webp" media="(min-width: 960px)">
                 <source srcset="images/buenos-aires-medium.webp" media="(min-width: 500px)">
-                <img src="images/buenos-aires-hero.webp" alt="Buenos aires city" width="500" height="250">
+                <img src="images/obelisco.webp" alt="Buenos aires city" width="650" height="350">
             </picture>
-        </div>
-        <section>
-            <h2>Data</h2>
-        </section>
 
-        <section class="st">
-            <h2>Wheater</h2>
-            <div id="sensacion-termica">
-                <p>Wind Chill</p>
-            </div>
-        </section>
+            <section class="primera">
+                <h2 id="titulo">Data</h2>
+                  <table class="datos">
+                    <tbody>
+                        <tr>
+                            <th>Area:</th>
+                            <td>2.78 million km²</td>
+                        </tr>
+                        <tr>
+                            <th>Population:</th>
+                            <td>46.23 million</td>
+                        </tr>
+                        <tr>
+                            <th>Capital:</th>
+                            <td>Buenos Aires</td>
+                        </tr>
+                        <tr>
+                            <th>Languajes:</th>
+                            <td>Spanish</td>
+                        </tr>
+                        <tr>
+                            <th>Currency:</th>
+                            <td>Argentine Peso (ARG)</td>
+                        </tr>
+                        <tr>
+                            <th>Time zone:</th>
+                            <td>UTC -3h</td>
+                        </tr>
+                        <tr>
+                            <th>Calling code</th>
+                            <td>+54</td>
+                        </tr>
+                    </tbody>
+                </table> 
+            </section>
+
+            <section class="st">
+                <h2>Wheater</h2>
+                <img id="icon" src="images/icono.svg" alt="wheather icon">
+                <table class="datos2">
+                    <tbody>
+                        <tr>
+                            <th>Temperature:</th>
+                            <td>12°C</td>
+                        </tr>
+                        <tr>
+                            <th>Conditions:</th>
+                            <td>Partly Cloudy</td>
+                        </tr>
+                        <tr>
+                            <th>Wind:</th>
+                            <td>11km/h</td>
+                        </tr>
+                        <tr>
+                            <th>Wind Chill:</th>
+                            <td id="wind-chill">NA</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </div>
     </main>
 
     <footer>
         <p>
-            <span id="currentyear"></span>
-            ©️ Mauro Villalba - Rosario Argentina<br>
-         </p>
-         <p id="lastModified"></p> <!-- Corrección del cierre de la etiqueta -->
+        <span id="currentyear"></span>©️ Mauro Villalba - Rosario Argentina<br>
+        </p>
+        <p id="lastModified"></p> <!-- Corrección del cierre de la etiqueta -->
      </footer>
 <script src="scripts/place.js" defer></script>
 </body>

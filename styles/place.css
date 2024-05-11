@@ -1,11 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Glory:wght@100..800&family=Roboto+Slab&display=swap');
 
-
+:root {
+    --heading-color: #000000;
+    --paragraph-color: #140303;
+    --link-color: #007bff; 
+    --article-background: rgba(235, 204, 204, 0.685); 
+    --heading-font:'Roboto Slab';
+    --paragraph-font:'Glory';
+}
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 }
+
+
 
 .hero img{
     width: 100%;
@@ -13,39 +22,223 @@
 }
 
 h1 {
-    
+    color: var(--heading-color);
 	text-align: left;
 	font-family: times, serif;
 	font-size: 2.5rem;
 	margin-left: 1rem;
     margin-top: 1rem;
     font-family:'Roboto Slab' ;
+    text-align: center;
 }
 
 header {
-	background-color: #71aaff;
+    font-size: var(--heading-font);
+	/*background-color: #71aaffaf;*/
     background: linear-gradient(to left, #6aaaff, #843cf8);
 	display: grid;
 	grid-gap: 1rem;
 	padding: 20px;
 	border: 1px solid rgba(0, 0, 0, 0.1);
-	box-shadow: 0 0 30px #333;
+	
 }
 
 footer{
-    background-color: rgb(222, 215, 250);
+    background-color: beige;
     padding:1rem;
     text-align: center;
     font-family: 'Glory';
+  
 }
 
 section{
-    padding: 1rem;
-    margin: .5rem;
+    /*padding: 1rem;
+    margin: .5rem;*/
     text-align: center;
-    background-color: #a4ccff;
-    font-family: 'Roboto Slab' ;
+    /*background-color: #a4ccff;*/
+    font-family: var(--paragraph-font);
 }
-.st h2:after{
+/*.st h2::after{
     content: "🌤️";
+}*/
+
+.primera{
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: center;
+    align-items: center;
+    height: 30vh;     
+}
+
+.datos{
+    display:contents;
+    text-align: center;
+    
+    
+    /*padding: 1.5rem;*/ 
+}
+
+.datos h2{
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+    
+}
+
+.st{
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: center;
+    align-items: center;
+    height: 40vh;    
+}
+
+.datos2{
+    display:contents;
+    text-align: center;
+    width: 100%;
+    background-color: #ffffff;
+    /*padding: 1.5rem;*/
+   
+    
+    
+}
+
+#titulo{
+    padding: 1rem;
+    
+}
+
+table{
+    margin: 0 auto;
+}
+tr{
+    text-align: right;
+}
+td{
+    text-align: left;
+}
+
+#icon{
+    width: 75px;
+    height: auto;
+}
+
+/*--------------- Large View-----------------------*/
+@media (min-width: 740px) {
+
+    .hero{
+        position: relative;
+    }
+
+    .primera{
+        justify-content:end;
+        /*background-color: #f3f3f3a4;*/
+        position: absolute;
+        /*bottom:20px;*/
+        top:30px;
+        left:30px;
+        height: 350px;
+        font-size: 1.3rem;
+
+      
+    }
+    .primera h2{
+        width: 90%;
+        position:absolute;
+        top:60px;
+        left:-20px;
+       
+        padding: 1rem;
+        text-align: left;
+        background-color: rgb(137, 214, 238);
+        border-radius: 8px;
+
+    }
+
+    .datos{
+        background-color: rgba(255, 255, 255, 0.747);
+        padding: 1.5rem;
+        height: 90%;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgb(235, 255, 50);
+        display: flex;
+        align-items: end;
+        
+    
+    }
+
+    .st{
+        display: flex;
+        justify-content:end;
+        /*background-color: #f3f3f3a4;*/
+        position: absolute;
+        /*bottom:20px;*/
+        bottom:30px;
+        right:30px;
+        height: 300px;
+        font-size: 1.3rem;
+        
+    }
+
+    .datos2{
+        background-color: rgba(255, 255, 255, 0.747);
+        padding: 1.5rem;
+        height: 80%;
+    
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgb(235, 255, 50);
+        display: flex;
+        align-items:end;
+        
+    }
+
+    .st h2{
+        width: 90%;
+        position:absolute;
+        top:80px;
+        left:-20px;
+        
+        padding: 1rem;
+        text-align: left;
+        background-color: rgb(137, 214, 238);
+        border-radius: 8px;
+    }
+
+    .st h2::after{
+    content: "🌤️";
+    }
+
+    section{
+       /* padding: .5rem;*/
+        
+        /*text-align: center;*/
+        /*background-color: #a4ccff;*/
+        font-family: var(--paragraph-font);
+        /*border: 2px solid rgb(255, 255, 255);*/
+        
+    }
+    
+    table{
+        margin: 0 auto;
+    }
+    tr{
+        text-align: right;
+    }
+    td{
+        text-align: left;
+    }
+
+    #icon{
+        display: none;
+    }
+
+    
+    
+   
+    
+    
+
+   
 }
