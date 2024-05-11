@@ -42,7 +42,7 @@ function mostrarST(){
 
      
     // Mostrar el factor de sensación térmica en la página
-    document.getElementById("sensacion-termica").innerText = "Wind Chill " + SensacionTermica.toFixed(2) + " °C";
+    document.getElementById("wind-chill").innerText = "Wind Chill " + SensacionTermica.toFixed(2) + " °C";
 }
 
 window.onload = function() {
