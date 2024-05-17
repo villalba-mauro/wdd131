@@ -118,6 +118,7 @@ const Contenedor = document.getElementById("image-container");
 
 
 function createTempleCard (temples){
+    Contenedor.innerHTML = ''; /*--linea agregada--*/
     temples.forEach(temple =>{
       let card = document.createElement("section");
       let name = document.createElement("h3");
@@ -148,14 +149,14 @@ function createTempleCard (temples){
 /*function displayTemples(FiltroTemplos){
   templeContainer.innerHTML = '';
   FiltroTemplos.forEach(createTempleCard);
-}*/
+}
 
-createTempleCard();
-
-
+createTempleCard();*/
 
 
-/*function FiltroTemplos(criteria) {
+
+
+function FiltroTemplos(criteria) {
   let FiltroTemplos = temples;
 
   switch (criteria) {
@@ -177,5 +178,12 @@ createTempleCard();
           break;
   }
 
-  displayTemples(FiltroTemplos);
-}*/
+  createTempleCard(FiltroTemplos);
+
+}
+
+createTempleCard(temples);
+
+
+
+displayTemples(FiltroTemplos);
