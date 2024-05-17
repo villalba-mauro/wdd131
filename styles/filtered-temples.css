@@ -94,13 +94,14 @@ header,main {
     display: block;
 }
 section{
-    background:linear-gradient(to bottom, #b7d3f8c4, #5822addc);
+    background:linear-gradient(to bottom, #eacffd, #e4ff6c);
 }
 
 figure{
     display: grid;
     place-content: center;
     padding: 1rem;
+	
 }
 figure img{
     width: 100%;
@@ -114,6 +115,7 @@ figure figcaption{
     font-family: 'Glory' ;
     font-size: 1.3rem;
     font-weight:normal;
+    
 }
 
 footer{
