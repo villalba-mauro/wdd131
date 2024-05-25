@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!--DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -37,6 +37,81 @@
     <footer class="footer">
         <div class="year-highlight">&copy; <span id="copyright-year"></span> | Kolawole Jegede | Nigeria</div>
         <div>Last modified: <span id="last-modified"></span></div>
+    </footer>
+</body>
+</html-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="Tiffany Voorhees">
+    <meta name="description" content="WDD 131 creating a form for product review for both desktop and mobile">
+
+    <title>WDD 131 | Tiffany Voorhees | Review Form</title>
+
+    <link rel="stylesheet" type="text/css" href="styles/form.css">
+
+    <!--script src="scripts/form.js" defer></script-->
+    <script src="scripts/getdates.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+    <main>
+        <form class="frm-one-column" action="review.html" method="get">
+            <label class="legend-header require-field" for="product_id">
+                Product:
+                <select id="product_id" name="product_id" >
+                    <option disabled selected value="">Select a product...</option>
+                </select>
+            </label>
+            
+
+            <fieldset class="star-ratings">
+                <legend class="legend-header require-field">Overall Rating:</legend>
+                <label><input type="radio" id="fivestar" name="stars" value="5" required></label>
+                <label><input type="radio" id="fourstar" name="stars" value="4" required></label>
+                <label><input type="radio" id="threestar" name="stars" value="3" required></label>
+                <label><input type="radio" id="twostar" name="stars" value="2" required></label>
+                <label><input type="radio" id="onestar" name="stars" value="1" required></label>
+            </fieldset>
+
+            <label class="legend-header require-field" for="installation_date">Date of Installation:
+                <input type="date" id="installation_date" name="installation_date" required>
+            </label>
+            
+            <fieldset id="features">
+                <legend class="legend-header require-field">
+                    Which features did you find useful in the product? 
+                    <br> (Check all that apply)
+                </legend>
+                <label><input type="checkbox" id="design" name="design"> Design</label>
+                <label><input type="checkbox" id="durability" name="durability"> Durability</label>
+                <label><input type="checkbox" id="ease_use" name="ease_use"> Ease of Use</label>
+                <label><input type="checkbox" id="performance" name="performance"> Performance</label>
+            </fieldset>
+              
+            <label class="legend-header">Written Review (Optional)<textarea id="review" name="review"></textarea></label>
+            
+
+            <label class="legend-header" for="user_name">Your name (Optional)<input type="text" id="user_name" name="user_name"></label>
+            
+
+            <button type="submit">Submit</button>
+
+        </form>
+    </main>
+    <footer>
+        <p class="no-margin-para">
+            ©️<span id="currentyear"></span> 💎 Tiffany Voorhees 💎 Utah
+        </p>
+        <p  class="no-margin-para" id="lastModified">
+
+        </p>
     </footer>
 </body>
 </html>

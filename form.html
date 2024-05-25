@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Mauro Villalba">
+    <meta name="description" content="Creating a form | WDD 131">
+    <title>WDD 131 | Mauro Villalba | Review Form </title>
+    <link rel="stylesheet" href="styles/form.css">
+    <link href="https://fonts.googleapis.com/css2?family=Glory:wght@500&family=Roboto+Slab:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <h1>Product Review</h1>
+        <form action="review.html" method="get">
+            <label class="item-header1" for="producto" >Product 
+                <select name="producto" id="producto" required>
+                    <option disabled selected value="">Select a product</option>
+                </select>
+            </label>
+            <fieldset   class="star-rating" >
+                    <legend class="item-header2">Overall Rating</legend>
+                    
+                     
+                    <input type="radio" name="stars" id="star-a" value="5" >
+                    <label for="star-a" ></label>
+              
+                    <input type="radio" name="stars" id="star-b" value="4"  >
+                    <label for="star-b" ></label>
+                
+                    <input type="radio" name="stars" id="star-c" value="3"  >
+                    <label for="star-c" ></label>
+                
+                    <input type="radio" name="stars" id="star-d" value="2" >
+                    <label for="star-d" ></label>
+                
+                    <input type="radio" name="stars" id="star-e" value="1"  >
+                    <label for="star-e" ></label>
+            </fieldset>
+
+            <label  class="item-header3" for="date_installation" >Date of Installation</label>
+            <input type="date" id="date_installation" name="date_installation" required>
+
+            <fieldset class="check">
+                <legend class="item-header4">What features do you find useful about the product?</legend>
+
+                    <input type="checkbox" id="durability" name="durability">
+                    <label for="durability">Durability</label>
+                    
+                    <input type="checkbox" id="Ease_use" name="Ease_use">
+                    <label for="Ease_use">Ease of Use</label>
+
+                    <input type="checkbox" id="performance" name="performance">
+                    <label for="performance">Performance</label>
+
+                    <input type="checkbox" id="design" name="design">
+                    <label for="design">Design</label>
+
+                    
+            </fieldset>
+
+            <label class="item-header5" for="review">Written Review (Optional)</label>
+            <textarea name="review" id="review"></textarea>
+
+            <label class="item-header6" for="user_name">Your name (Optional)</label>
+            <input type="text" id="user_name" name="user_name">
+
+            <button type="submit" class="boton">Submit</button>
+
+
+        </form>
+    </main>
+    <footer>
+        <p>
+            <span id="currentyear"></span>
+            ©️ Mauro Villalba - Rosario Argentina<br>
+         </p>
+         <p id="lastModified"></p> <!-- Corrección del cierre de la etiqueta -->
+     </footer>   
+<script src="scripts/form.js" defer></script>
+</body>
+</html> 
