@@ -89,6 +89,7 @@ header,main {
 	display: grid;
     grid-template-columns: 1fr;
     gap: 10px;
+	
 }
 .purpose{
 	display: block;
@@ -136,6 +137,7 @@ header,main {
 .blog-3 h3{
 	font-family: var(--heading-font);
 	text-align: center;
+	padding: 1rem;
 }
 .blog-1 p,
 .blog-2 p,
@@ -229,6 +231,7 @@ main h2{
 		padding: 10px 0;
 		background-color: aliceblue;
 		position: relative;
+		
 	}
 	.purpose{
 		display: block;
@@ -283,8 +286,9 @@ main h2{
 	.blog-Num{
 		
 		display: grid;
-		grid-template-columns:  repeat(3, 1fr);
-		grid-template-rows: auto auto;
+		/*grid-template-columns:  repeat(3, 1fr);
+		grid-template-rows: auto auto;*/
+		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 		
 		justify-content: center;
 		align-items: center;
@@ -304,6 +308,7 @@ main h2{
 	.blog-2 h3,
 	.blog-3 h3{
 		font-family: var(--heading-font);
+		
 	
 	}
 	.blog-1 p,
