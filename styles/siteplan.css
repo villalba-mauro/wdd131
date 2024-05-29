@@ -125,7 +125,7 @@ header {
 	padding: 1rem;
 }
 .intro-img{
-	width: 300px;
+	width: 50vh;     /* ------IMAGEN---------  */
 }
 
 .logo{
@@ -143,7 +143,7 @@ header {
 	
 }
 .logo img{
-	max-width: 300px;
+	max-width: 50vh;     /* ------IMAGEN---------  */
 	align-items: center;
 	
 }
@@ -215,7 +215,6 @@ header {
 	font-size: 1.3rem;
 	margin-top: 20px;
 	color:var(--color2);
-	
 
 }
 .lista li,
