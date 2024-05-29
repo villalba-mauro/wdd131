@@ -34,6 +34,10 @@ header {
 	box-shadow: 0 0 30px #333;
 	
 }
+header h1{
+	padding: 1rem;
+	font-size:1.5rem;
+}
 
 /*header,main {
 	margin: 0 auto;
@@ -56,6 +60,7 @@ header {
 #menu::before {
 	content: "☰";
 	margin-right: 1rem;
+	
 	
 }
 
@@ -125,7 +130,7 @@ header {
 	padding: 1rem;
 }
 .intro-img{
-	width: 50vh;     /* ------IMAGEN---------  */
+	width: 30vh;     /* ------IMAGEN---------  */
 }
 
 .logo{
@@ -143,7 +148,7 @@ header {
 	
 }
 .logo img{
-	max-width: 50vh;     /* ------IMAGEN---------  */
+	max-width: 30vh;     /* ------IMAGEN---------  */
 	align-items: center;
 	
 }
