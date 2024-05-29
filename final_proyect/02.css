@@ -18,26 +18,21 @@
 }
 /* -------------------------small view navigation --------------------------------*/
 
-
-
 header {
 	font-family: var(--heading-font);
 	
 	background-color:var(--color1);
 	background: linear-gradient(to right, #ffe571, #ffffff);
 	display: grid;
-	
 	grid-gap: 1rem;
-	
 	padding: 20px;
 	border: 1px solid rgba(0, 0, 0, 0.1);
 	box-shadow: 0 0 30px #333;
-	
 }
 
-/*header,main {
+header,main {
 	margin: 0 auto;
-}*/
+}
 .nav{
 	max-width: 700px;
 	margin: 1rem auto;
@@ -92,7 +87,7 @@ header {
 
 .blog-content{
 	display: grid;
-    grid-template-columns: 1fr; /* cuando pongo 100% cambia*/
+    grid-template-columns: 1fr;
     gap: 10px;
 	
 }
@@ -124,37 +119,11 @@ header {
 	font-size: 1.5rem;
 	padding: 1rem;
 }
-.intro-img{
-	width: 300px;
-}
-
-.logo{
-	justify-content: center;
-
-	margin: 0 20px;
-	padding: 1rem;
-	
-}
-.logo h2{
-	font-family: var(--heading-font);
-	font-weight: 400;
-	margin-top: 10px;
-	text-align: center;
-	
-}
-.logo img{
-	max-width: 300px;
-	align-items: center;
-	
-}
-
-
 
 
 .blog-Num{
 	text-align: center;
 	background-color: var(--color3);
-
 }
 
 .blog-1,
@@ -189,48 +158,9 @@ header {
 	border-radius: 15px;
 	
 }
-#aud-tittle{
-	font-family: var(--heading-font);
-	font-size: 2rem;
-}
-.audience{
-	display: grid;
-	justify-content: center;
-}
-.lista, .lista2{
-	font-family: var(--paragraph-font);
-	font-weight:500;
-	margin-top: 15px;
-	padding: 1rem;
-}
-.lista-title{
-	font-family: var(--paragraph-font);
-	font-size: 1.4rem;
-	font-style: italic;
-	font-weight: 800;
-	
-}
-.lista p, .lista2 p{
-	font-weight: bold;
-	font-size: 1.3rem;
-	margin-top: 20px;
-	color:var(--color2);
-	
-
-}
-.lista li,
-.lista2 li{
-	list-style: none;
-	margin-top: 10px;
-	font-size: 1.2rem;
-	font-weight:400;
-	
-}
 
 main{
-	/*display: grid;*/
-	/*width: 100%;*/
-	
+	display: grid;
 	justify-content: center;
 	text-align: center;
 }
@@ -238,7 +168,6 @@ main h2{
 	font-family: var(--heading-font);
 	color: var(--color2);
 }
-
 
 .text1{
 	background-color: var(--color1);
@@ -279,7 +208,6 @@ main h2{
         display: flex;
         align-items: center;
         justify-content: space-between;
-		
     }
 
 	.navigation {
@@ -293,11 +221,16 @@ main h2{
 		/*flex: 1 1 100%;*/
 	}
 
-	
+	.album {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
 	.blog-content{
 		padding: 10px 0;
-		background-color: var(--color3);
-		
+		background-color: aliceblue;
+		position: relative;
 		
 	}
 	.purpose{
@@ -312,21 +245,18 @@ main h2{
 	}
 	.intro{
 		/*width: 100vw;*/
-		/*height: 30vh;*/
-		display: flex;
-		flex-wrap: wrap; /*cambio*/
+		height: 30vh;
+		display: block;
 		align-items: center;
-		justify-content: space-evenly;
+		justify-content: center;
 		display: flex;
 		
 	}
 	.intro-texto {
 		display: flex;
-		
 		text-align:center;
 		flex-direction: column;
 		align-self: flex-start;
-		
 		width: 50%;
 		
 		margin-top: 1rem;
@@ -346,29 +276,6 @@ main h2{
 		font-weight: 500;
 		font-size: 1.3rem;
 	}
-	.intro-texto img{
-		max-width: 400px;
-		align-self: center;
-	}
-
-	.logo{
-		display: flex;
-		flex-wrap: wrap;
-		flex-direction: column;
-		justify-content: right;
-
-		margin: 0 20px;
-		padding: 1rem;
-		
-	}
-	.logo h2{
-		text-align: center;
-		
-	}
-	.logo img{
-		max-width: 300px;
-		
-	}
 	
 	.img-principal{
 		max-width: 100%;
@@ -382,7 +289,6 @@ main h2{
 		/*grid-template-columns:  repeat(3, 1fr);
 		grid-template-rows: auto auto;*/
 		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-		gap: 2rem;
 		
 		justify-content: center;
 		align-items: center;
@@ -421,52 +327,6 @@ main h2{
 		max-height: 350px;
 		border-radius: 10px;
 	}
-	
-	#aud-tittle{
-		padding: 1rem;
-		text-align: center;
-		font-family: var(--heading-font);
-		font-size: 2rem;
-	}
-	.audience{
-		display: flex;
-		justify-content:center;
-	}
-	.lista{
-		text-align: center;
-
-		max-width: 400px;
-		padding: 1rem;
-		margin: 50px;
-		font-size: 1.4rem;
-		font-weight: 450;
-		/*column-count: 1;*/
-		font-family:var(--paragraph-font) ;
-	}
-
-	.lista2{
-		text-align: center;
-		max-width: 400px;
-		margin: 50px;
-		font-size: 1.4rem;
-		font-weight: 450;
-		padding: 1rem;
-		/*column-count:1 ;*/
-		font-family:var(--paragraph-font) ;	
-	}
-	.lista p, .lista2 p{
-		font-weight: bold;
-		margin-bottom: 20px;
-	}
-	.lista li,
-	.lista2 li{
-		text-align: left;
-	}
-
-	.lista-title{
-		padding: 1.5rem;
-	}
-	
 	
 	main h2{
 		font-family: var(--heading-font);
