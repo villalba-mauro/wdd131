@@ -210,7 +210,7 @@ button[type="submit"]{
 	font-family: var(--paragraph-font);
 }
 
-@media (min-width:600px){
+@media (min-width:640px){
     #menu {
        
 		display: none; /* hide hamburger button*/

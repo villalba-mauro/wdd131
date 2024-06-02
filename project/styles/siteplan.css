@@ -395,7 +395,7 @@ main h2{
 
 
 
-@media (min-width: 600px) {
+@media (min-width: 640px) {
 	#menu {
 		display: none; /* hide hamburger button*/
 	}
