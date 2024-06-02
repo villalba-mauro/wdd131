@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Mauro Villalba">
+    <meta name="description" content="Do you need help or want to make a question? Contact Madeck Furniture through our form. We will gladly assist you as soon as possible. You can also visit us in our physical store or call us by phone. Do not hesitate to contact us!">
+    <title>Contact us</title>
+    <link rel="stylesheet" href="styles/st-contact.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Glory:wght@500&family=Roboto+Slab:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <header>
+        <h1>Madeck Furniture</h1>
+        
+        <button id="menu"></button>
+        <nav class="navigation">
+          <a href="siteplan.html" title="Home">Home</a>
+          <a href="products.html" title="Products">Products</a>
+          <a href="st-contact.html" title="Contact">Contact us</a>
+          
+        </nav>
+      </header>
+    <main>
+        <h2>Contact with us</h2>
+        <form action="contact-review.html" method="get">
+            <label class="item-header1" for="producto" >Product 
+                <select name="producto" id="producto" required>
+                    <option disabled selected value="">Select a product</option>
+                </select>
+            </label>
+
+
+            <label  class="item-header3" for="del-day" >Delivery day</label>
+            <input type="date" id="del-day" name="del-day" required>
+
+            <fieldset class="check">
+                <legend class="item-header4">What features do you find useful about the product?</legend>
+
+                    <input type="checkbox" id="durability" name="durability">
+                    <label for="durability">Durability</label>
+                    
+                    <input type="checkbox" id="design" name="design">
+                    <label for="design">Design</label>
+
+                    <input type="checkbox" id="opi-rew" name="opi-rew">
+                    <label for="opi-rew">Opinions and reviews</label>
+
+                    <input type="checkbox" id="value-money" name="value-money">
+                    <label for="value-money">Value for money</label>
+
+                    
+            </fieldset>
+
+            <label class="item-header5" for="review">Written Review (Optional)</label>
+            <textarea name="review" id="review"></textarea>
+
+            <label class="item-header6" for="user_name">Your name (Optional)</label>
+            <input type="text" id="user_name" name="user_name">
+
+            <button type="submit" class="boton">Submit</button>
+
+
+        </form>
+    </main>
+    <footer class="foo">
+        <p class="final">
+            <span id="currentyear"></span>
+            ©️ Mauro Villalba - Rosario Argentina<br>
+         </p>
+         <p id="lastModified"></p> <!-- Corrección del cierre de la etiqueta -->
+     </footer>
+<script src="scripts/siteplan.js" defer></script>
+<script src="scripts/contac.js" defer></script>
+
+</body>
+</html> 

@@ -28,3 +28,52 @@ getCurrentYear();
 
 // Call the function to get and display the date of last modification when the page loads
 getLastModifiedDate();
+
+
+
+// -----------------------------CAMBIA DE COLOR EL H2-------------------------
+
+//variables
+const caja = document.getElementById("#caja");
+const h2 = document.getElementById("p2");
+
+// Se guarda el color origina primero y dps se define el color a cambiar
+const colorOriginal = p2.style.color;
+const nuevoColor = "#850808";
+
+
+//Funcion para cambiar el color, primero se verifica el color actual y dps lo cambia
+function changeColor(){
+    
+    if (p2.style.color ===colorOriginal){
+        p2.style.color = nuevoColor;
+    } else{
+        p2.style.color = colorOriginal
+    }
+}
+
+p2.addEventListener('click',changeColor);
+
+//---------------------------------    ------------------------------
+
+// --------------------- CAMBIAR IMAGEN------------------
+
+//Seleccionamos la imagen primero
+const Image = document.getElementById('logo-image');
+
+const currentImage = Image.src;
+const newImage = 'images/logo2.webp';
+
+// Esta función cambia la URL de la imagen src a la nueva imagen y luego la vuelve a la original.
+
+function changeImagen(){
+    if (Image.src === currentImage){  // Usar comparación estricta (===)
+        Image.src = newImage;
+    } else{
+        Image.src = currentImage;
+    }
+}
+
+//Se llama a la funcion "changeImagen"
+Image.addEventListener('click', changeImagen);
+
