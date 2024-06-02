@@ -23,7 +23,7 @@ header {
     background: var(--color1);
 	display: grid;
 	grid-gap: 1rem;
-	padding: 20px;
+	
 }
 
 .nav{
@@ -36,13 +36,13 @@ header {
 	border: 0;
 	background: none;
 	position: absolute;
-	top: 3rem;
-	right: .4rem;
+	top: 2rem;
+	right: 1rem;
 }
 
 #menu::before {
 	content: "☰";
-	margin-right: 3rem;
+	margin-right: 1rem;
 }
 
 #menu.open::before {
@@ -62,7 +62,7 @@ header {
 	text-decoration: none;
 	color: var(--color4);
 	font-family:var(--heading-font);
-    font-size: 1rem;
+    font-size: 1.4rem;
 }
 .navigation a:hover {
 	background-color: var(--color3);
@@ -77,15 +77,16 @@ header {
 
 body{
     max-width: 600px;
-    padding: 1rem;
     margin: 0 auto; 
 }
 
 h1{
     font-family:var(--heading-font) ;
-    font-size: 1.3rem;
-    padding: 1rem;
-    text-align: center;
+    font-size: 2rem;
+    padding: .5rem;
+    margin-top: 1rem;
+   
+    text-align: left;
 }
 h2{
     font-family:var(--heading-font) ;
@@ -217,19 +218,22 @@ button[type="submit"]{
         display: flex;
         align-items: center;
         justify-content: space-between;
+        padding-bottom: 1rem;
+        
 		
     }
 
 	.navigation {
         justify-content: flex-end;
 		flex-direction: row;
-        
+        margin-top: 1rem;
 	}
 
 	.navigation a {
         display: block;
         padding: .8rem;
         background: var(--color1);
+        font-size: 1.1rem;
 		/*flex: 1 1 100%;*/
 	}
 

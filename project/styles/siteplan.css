@@ -33,8 +33,9 @@ header {
 	padding: 20px;
 }
 header h1{
-	padding: 1rem;
+	padding: .2rem;
 	font-size:2rem;
+	text-align: left;
 }
 
 .nav{
@@ -266,19 +267,8 @@ header h1{
 	padding: .5rem;
 }
 
-/*----------------------------------------Palette colors-----*/
-/*.colores{
-	/*display: grid;
-	justify-content: center;*/
-	
-	/*display: flex;
-	flex-wrap: wrap;
-	width: 100%;*/
 
-	/*margin: 0 ;
-	padding: .3rem;
-	font-size: 1rem;
-}*/
+
 /*---------------Table colors------------*/
 .colores{
 	display: grid;
@@ -405,7 +395,7 @@ main h2{
 
 
 
-@media (min-width: 700px) {
+@media (min-width: 600px) {
 	#menu {
 		display: none; /* hide hamburger button*/
 	}
