@@ -177,7 +177,7 @@ button[type="submit"]{
     border-radius: 50px;
 }
 .h-review{
-    background-color: var(--color5);
+    background-color: var(--color3);
     margin-bottom: .3rem;
 }
 .h-review h1{
