@@ -85,3 +85,4 @@ function addProductOptions(){
       product_select.appendChild(option);
   });
 }
+

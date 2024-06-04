@@ -8,7 +8,7 @@
 	--color2:#ffffff;
 	--color3: #850808;
 	--color4: #000000;
-	--color5:#7e6b00;
+	--color5:#e7bd00;
 }
 
 * {
@@ -60,7 +60,7 @@ header {
 	display: none;
 	padding: 1rem;
 	text-align: center;
-	text-decoration: none;
+	text-decoration: underline;
 	color: var(--color4);
 	font-family:var(--heading-font);
 	font-size: 1.4rem;
@@ -91,14 +91,14 @@ h2 {
 		font-size: 2rem;
 		text-align: center;
 		font-family: 'Roboto Slab';
-		color: var(--color5);
+		color: var(--color3);
 		padding: 1rem;
 }
 
 
 #image-container{
 	display: grid;
-		
+	justify-content: center;
 	place-items: center;
 	width: 100%;
 	margin-bottom: 1rem;
@@ -109,16 +109,13 @@ h2 {
 
 
 figure img{
-	
-	height:350px;
+	     
+	height:300px;       
 	/*max-width: 300px;*/
 	/*padding: .5rem;*/
 	margin: 5px;
-	
 	border-radius: 15%;
-	/*-webkit-box-shadow: 0px 0px 43px 3px rgba(181,100,20,1);
-	-moz-box-shadow: 0px 0px 43px 3px rgba(181,100,20,1);*/
-	box-shadow: 0px 0px 10px 2px var(--color5);
+	box-shadow: 1px 1px 8px 0px var(--color4);
    
 }
 
@@ -136,6 +133,20 @@ figure{
 	padding:.3rem;
 	text-align: center;
 	font-family: var(--paragraph-font);
+}
+
+#scrollToTopBtn {
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	display: none; /* Inicialmente oculto */
+	background-color: var(--color4);
+	color: var(--color2);
+	padding: 10px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	
 }
 
 @media (min-width: 640px) {
@@ -158,6 +169,7 @@ figure{
 
 	.navigation a {
         display: block;
+		text-decoration: none;
 		/*flex: 1 1 100%;*/
 	}
 	
@@ -170,7 +182,7 @@ figure{
 		gap: 10px; /* Espacio entre las columnas */
 	}
 	figure img{
-		height:370px;
+		height:300px;
 		margin: 5px;
 		border-radius: 15%;
 		transition: transform 0.3s ease; /* Define la transición */
